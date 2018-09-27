@@ -21,3 +21,6 @@
 
 ; Steam
 #s:: Run, "E:\Steam\Steam.exe"
+
+; Paste in terminals
+^V:: SendInput {Raw}%clipboard%
