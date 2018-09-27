@@ -2,12 +2,7 @@
 #Warn  ; Enable warnings to assist with detecting common errors.
 
 ; Unity Hub
-#u::
-Process, Exist, "C:\Program Files\Unity Hub\Unity Hub.exe"
-If Not ErrorLevel
-{
-    Run, "C:\Program Files\Unity Hub\Unity Hub.exe"
-}
+#u:: Run, "C:\Program Files\Unity Hub\Unity Hub.exe"
 
 ; VS Code
 #c:: Run, "C:\Users\Shubham\AppData\Local\Programs\Microsoft VS Code\Code.exe"
