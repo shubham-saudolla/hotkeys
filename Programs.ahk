@@ -1,5 +1,10 @@
 ﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+Menu, Tray, Icon, %A_ScriptDir%/icon.ico
+return
 
 ; Updates and reloads scripts on Ctrl+S
 ~^s::
@@ -40,5 +45,5 @@ return
 ; Steam
 #s:: Run, "E:\Steam\Steam.exe"
 
-; Paste in terminals
-^v:: SendInput {Raw}%clipboard%
+; FIXME: Paste in terminals
+;^v:: SendInput {Raw}%clipboard%
