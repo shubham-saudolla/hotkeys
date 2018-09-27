@@ -5,7 +5,10 @@
 #u:: Run, "C:\Program Files\Unity Hub\Unity Hub.exe"
 
 ; VS Code
-#c:: Run, "C:\Users\Shubham\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+#v:: Run, "C:\Users\Shubham\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+
+; Open a terminal
+#c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
 
 ; Firefox
 #f:: Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
