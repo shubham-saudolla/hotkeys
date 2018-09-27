@@ -1,6 +1,21 @@
 ﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #Warn  ; Enable warnings to assist with detecting common errors.
 
+; Updates and reloads scripts on Ctrl+S
+~^s::
+SetTitleMatchMode, 2
+IfWinActive, .ahk
+{
+    Send, ^s
+    SplashTextOn,,,Updated script,
+    Sleep,750
+    SplashTextOff
+    Reload
+}
+else
+    Send, ^s
+return                                     
+
 ; Unity Hub
 #u:: Run, "C:\Program Files\Unity Hub\Unity Hub.exe"
 
@@ -26,4 +41,4 @@
 #s:: Run, "E:\Steam\Steam.exe"
 
 ; Paste in terminals
-^V:: SendInput {Raw}%clipboard%
+^v:: SendInput {Raw}%clipboard%
