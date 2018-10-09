@@ -1,8 +1,9 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+﻿            #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Changing the tray icon
 Menu, Tray, Icon, %A_ScriptDir%/icon.ico
 return
 
@@ -34,7 +35,7 @@ return
 #f:: Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
 
 ; GitHub
-#g:: Run, "https://github.com/shubham-saudolla"
+#g:: Run, "https://github.com/shubham-saudolla?tab=repositories"
 
 ; YouTube
 #y:: Run, "https://www.youtube.com/"
