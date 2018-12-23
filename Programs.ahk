@@ -35,7 +35,7 @@ return
 #f:: Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
 
 ; GitHub
-#g:: Run, "https://github.com/shubham-saudolla?tab=repositories"
+#g:: Run, "https://github.com/shubham-saudolla"
 
 ; YouTube
 #y:: Run, "https://www.youtube.com/"
