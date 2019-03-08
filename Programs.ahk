@@ -29,7 +29,7 @@ return
 #v:: Run, "C:\Users\Shubham\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 
 ; Open a terminal
-#c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
+; #c::
 
 ; Firefox
 #f:: Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
