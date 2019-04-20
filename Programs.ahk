@@ -46,5 +46,8 @@ return
 ; Steam
 #s:: Run, "E:\Steam\Steam.exe"
 
+; Projects
+#p:: Run, "E:\Projects"
+
 ; FIXME: Paste in terminals
 ;^v:: SendInput {Raw}%clipboard%
