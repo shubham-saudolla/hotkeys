@@ -49,5 +49,5 @@ return
 ; Projects
 #p:: Run, "E:\Projects"
 
-; FIXME: Paste in terminals
-;^v:: SendInput {Raw}%clipboard%
+; Terminal
+#c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
