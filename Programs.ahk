@@ -28,9 +28,6 @@ return
 ; VS Code
 #v:: Run, "C:\Users\Shubham\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 
-; Open a terminal
-; #c::
-
 ; Firefox
 #f:: Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
 
@@ -51,3 +48,6 @@ return
 
 ; Terminal
 #c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
+
+; WhatsApp Web
+#w:: Run, "https://web.whatsapp.com"
