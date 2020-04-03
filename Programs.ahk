@@ -51,3 +51,6 @@ return
 
 ; WhatsApp Web
 #w:: Run, "https://web.whatsapp.com"
+
+; QBitTorrent
+#q:: Run, "D:\Programs\qBittorrent\qbittorrent.exe"
