@@ -23,7 +23,7 @@ else
 return                                     
 
 ; Unity Hub
-#u:: Run, "C:\Program Files\Unity Hub\Unity Hub.exe"
+#u:: Run, "D:\Programs\UnityHub\Unity Hub\Unity Hub.exe"
 
 ; VS Code
 #v:: Run, "C:\Users\Shubham\AppData\Local\Programs\Microsoft VS Code\Code.exe"
