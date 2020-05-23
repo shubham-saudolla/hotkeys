@@ -244,5 +244,11 @@ F12::
 Send {Volume_Up}
 return
 
+; Media playback controls
++F11:: ;the + means shift
+Send {Media_Prev}
+return
 
-
++F12::
+Send {Media_Next}
+return
