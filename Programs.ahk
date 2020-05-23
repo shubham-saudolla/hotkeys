@@ -1,19 +1,20 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-#Warn  ; Enable warnings to assist with detecting common errors.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+﻿#NoEnv  ;recommended for performance and compatibility with future AutoHotkey releases.
+#Warn  ;enable warnings to assist with detecting common errors.
+SendMode Input  ;recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ;ensures a consistent starting directory.
+#SingleInstance force
 
-; Changing the tray icon
+;changing the tray icon
 Menu, Tray, Icon, %A_ScriptDir%/programsIcon.ico
 return
 
-; Updates and reloads scripts on Ctrl+S
+;updates and reloads scripts on Ctrl+S
 ~^s::
 SetTitleMatchMode, 2
 IfWinActive, .ahk
 {
     Send, ^s
-    SplashTextOn,,,Updated script,
+    SplashTextOn,,,Updated script!,
     Sleep,750
     SplashTextOff
     Reload
@@ -22,46 +23,47 @@ else
     Send, ^s
 return
 
-; variables as paths to my programs and urls
-firefox = "C:\Program Files\Mozilla Firefox\firefox.exe"
+;programs
 
-; Unity Hub
-#u:: Run, "D:\Programs\UnityHub\Unity Hub\Unity Hub.exe"
-
-; VS Code
-#v:: Run, "C:\Users\Shubham\AppData\Local\Programs\Microsoft VS Code\Code.exe"
-
-; Firefox Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
+;firefox
 #f::
 IfWinExist, ahk_class MozillaWindowClass
 {   WinActivate
     Send ^t
-    sleep 1000
+    Sleep 1000
 }
 else
-    run firefox
+    Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
 return
 
-; GitHub
-#g:: Run, "https://github.com/shubham-saudolla"
+;unity Hub
+#u:: Run, "D:\Programs\UnityHub\Unity Hub\Unity Hub.exe"
 
-; YouTube
-#y:: Run, "https://www.youtube.com/"
+;vsCode
+#v:: Run, "C:\Users\Shubham\AppData\Local\Programs\Microsoft VS Code\code.exe"
 
-; Gmail Inbox
-#i:: Run, "https://mail.google.com/mail/u/1/#inbox"
+;qBitTorrent
+#q:: Run, "D:\Programs\qBittorrent\qbittorrent.exe"
 
-; Steam
+;steam
 #s:: Run, "E:\Steam\Steam.exe"
 
-; Projects
+;projects folder
 #p:: Run, "E:\Projects"
 
-; Terminal
+;terminal
 #c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
 
-; WhatsApp Web
-#w:: Run, "https://web.whatsapp.com"
+;urls
 
-; QBitTorrent
-#q:: Run, "D:\Programs\qBittorrent\qbittorrent.exe"
+;gitHub
+#g:: Run, "https://github.com/shubham-saudolla"
+
+;youTube
+#y:: Run, "https://www.youtube.com/"
+
+;gmail inbox
+#i:: Run, "https://mail.google.com/mail/u/1/#inbox"
+
+;whatsApp web
+#w:: Run, "https://web.whatsapp.com"
