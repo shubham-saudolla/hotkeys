@@ -54,3 +54,12 @@ return
 
 ; QBitTorrent
 #q:: Run, "D:\Programs\qBittorrent\qbittorrent.exe"
+
+; Media control
+F11::
+Send {Volume_Down}
+return
+
+F12::
+Send {Volume_Up}
+return
