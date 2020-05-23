@@ -20,7 +20,10 @@ IfWinActive, .ahk
 }
 else
     Send, ^s
-return                                     
+return
+
+; variables as paths to my programs and urls
+firefox = "C:\Program Files\Mozilla Firefox\firefox.exe"
 
 ; Unity Hub
 #u:: Run, "D:\Programs\UnityHub\Unity Hub\Unity Hub.exe"
@@ -28,8 +31,16 @@ return
 ; VS Code
 #v:: Run, "C:\Users\Shubham\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 
-; Firefox
-#f:: Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
+; Firefox Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
+#f::
+IfWinExist, ahk_class MozillaWindowClass
+{   WinActivate
+    Send ^t
+    sleep 1000
+}
+else
+    run firefox
+return
 
 ; GitHub
 #g:: Run, "https://github.com/shubham-saudolla"
