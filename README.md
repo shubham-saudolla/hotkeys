@@ -4,6 +4,6 @@
 # Hotkeys and Shortcuts
 </div>
 
-These are a few AutoHotkey scripts that have made my life a lot more easier; the scripts range from opening some frequemtly visited websites, launching some programs and single key media and brightness controls.
+These are a few AutoHotkey scripts that have made my life a lot more easier; the scripts range from opening frequently visited websites, launching programs and single key media and brightness controls.
 
 👾 Shubham.
