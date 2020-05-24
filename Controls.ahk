@@ -212,7 +212,7 @@ BrightnessSetter_new() {
 
 BS := new BrightnessSetter()
 
-; Brightness controls
+;brightness controls
 F9::BS.SetBrightness(-5)
 F10::BS.SetBrightness(5)
 
@@ -220,7 +220,7 @@ F10::BS.SetBrightness(5)
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 #NoTrayIcon
 
-; Updates and reloads scripts on Ctrl+S
+;updates and reloads scripts on Ctrl+S
 ~^s::
 SetTitleMatchMode, 2
 IfWinActive, .ahk
@@ -235,7 +235,12 @@ else
     Send, ^s
 return
 
-; Volume controls
+;productivity hotkeys
+F5::Send ^c ; copy
+F6::Send ^x ; cut
+F7::Send ^v ; paste
+
+;volume controls
 F11::
 Send {Volume_Down}
 return
@@ -244,7 +249,7 @@ F12::
 Send {Volume_Up}
 return
 
-; Media playback controls
+;media playback controls
 +F11:: ;the + means shift
 Send {Media_Prev}
 return
