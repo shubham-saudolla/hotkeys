@@ -23,6 +23,14 @@ else
     Send, ^s
 return
 
+;hotkey to launch a google search of any highlighted text using CTRL + Space
+^Space::
+{
+    Send, ^c
+    Sleep 50
+    Run, http://www.google.com/search?q=%clipboard%
+    return
+}
 ;programs
 
 ;firefox
