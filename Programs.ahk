@@ -4,9 +4,10 @@ SendMode Input  ;recommended for new scripts due to its superior speed and relia
 SetWorkingDir %A_ScriptDir%  ;ensures a consistent starting directory.
 #SingleInstance force
 
+#NoTrayIcon
 ;changing the tray icon
-Menu, Tray, Icon, %A_ScriptDir%/programsIcon.ico
-return
+;Menu, Tray, Icon, %A_ScriptDir%/programsIcon.ico
+;return
 
 ;updates and reloads scripts on Ctrl+S
 ~^s::
@@ -63,7 +64,7 @@ return
 #c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
 
 ;Your Phone
-NumpadEnter:: Run, shell:AppsFolder\Microsoft.YourPhone_8wekyb3d8bbwe!App
+NumpadEnter:: Run, "shell:AppsFolder\Microsoft.YourPhone_8wekyb3d8bbwe!App"
 
 ;urls
 
