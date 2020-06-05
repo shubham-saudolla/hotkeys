@@ -64,7 +64,7 @@ return
 #c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
 
 ;Your Phone
-NumpadEnter:: Run, "shell:AppsFolder\Microsoft.YourPhone_8wekyb3d8bbwe!App"
+F8:: Run, "shell:AppsFolder\Microsoft.YourPhone_8wekyb3d8bbwe!App"
 
 ;urls
 
