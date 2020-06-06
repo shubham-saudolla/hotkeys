@@ -257,3 +257,9 @@ return
 +F12::
 Send {Media_Next}
 return
+
+;press middle mouse button to move up a folder in Explorer
+#IfWinActive, ahk_class CabinetWClass
+~MButton::Send !{Up} 
+#IfWinActive
+return
