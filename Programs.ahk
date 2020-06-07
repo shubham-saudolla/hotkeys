@@ -24,8 +24,8 @@ else
     Send, ^s
 return
 
-;hotkey to launch a google search of any highlighted text using CTRL + Space
-^Space::
+;hotkey to launch a google search of any highlighted text using Alt + Space
+!Space::
 {
     Send, ^c
     Sleep 50
