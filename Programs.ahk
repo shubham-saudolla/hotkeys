@@ -46,7 +46,7 @@ return
 return
 
 ;Mail
-F8:: Run, "shell:AppsFolder\microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail"
+F7:: Run, "shell:AppsFolder\microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail"
 
 ;unity Hub
 #u:: Run, "D:\Programs\UnityHub\Unity Hub\Unity Hub.exe"

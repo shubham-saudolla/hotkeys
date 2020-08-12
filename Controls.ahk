@@ -235,11 +235,6 @@ else
     Send, ^s
 return
 
-;productivity hotkeys
-F5::Send ^c ; copy
-F6::Send ^x ; cut
-F7::Send ^v ; paste
-
 ;volume controls
 F11::
 Send {Volume_Down}
@@ -250,6 +245,10 @@ Send {Volume_Up}
 return
 
 ;media playback controls
+F8::
+Send {Media_Play_Pause}
+return
+
 +F11:: ;the + means shift
 Send {Media_Prev}
 return
