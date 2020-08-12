@@ -213,8 +213,8 @@ BrightnessSetter_new() {
 BS := new BrightnessSetter()
 
 ;brightness controls
-F9::BS.SetBrightness(-5)
-F10::BS.SetBrightness(5)
+F11::BS.SetBrightness(-5)
+F12::BS.SetBrightness(5)
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -236,11 +236,11 @@ else
 return
 
 ;volume controls
-F11::
+F9::
 Send {Volume_Down}
 return
 
-F12::
+F10::
 Send {Volume_Up}
 return
 
@@ -249,11 +249,11 @@ F8::
 Send {Media_Play_Pause}
 return
 
-+F11:: ;the + means shift
++F9:: ;the + means shift
 Send {Media_Prev}
 return
 
-+F12::
++F10::
 Send {Media_Next}
 return
 
