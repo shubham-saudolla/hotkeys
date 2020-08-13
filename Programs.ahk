@@ -32,10 +32,11 @@ return
         Run, http://www.google.com/search?q=%clipboard%
         return
     }
-    ;programs
+
+;programs
     
-    ;firefox
-#f::
+;firefox
+F5::
     IfWinExist, ahk_class MozillaWindowClass
     { WinActivate
         Send ^t
