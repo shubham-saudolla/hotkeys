@@ -46,6 +46,8 @@ F5::
         Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
 return
 
+F6:: Run, chrome.exe "https://itanywhere-sng2.ra.ubs.com/vpn/itanywhere.html"
+
 ;Mail
 F7:: Run, "shell:AppsFolder\microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail"
 
