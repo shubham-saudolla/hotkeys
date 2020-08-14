@@ -24,15 +24,6 @@ SetWorkingDir %A_ScriptDir% ;ensures a consistent starting directory.
         Send, ^s
 return
 
-;hotkey to launch a google search of any highlighted text using Alt + Space
-!Space::
-    {
-        Send, ^c
-        Sleep 50
-        Run, http://www.google.com/search?q=%clipboard%
-        return
-    }
-
 ;programs
     
 ;firefox
