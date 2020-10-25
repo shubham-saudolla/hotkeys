@@ -37,13 +37,13 @@ F5::
         Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
 return
 
-F6:: Run, chrome.exe "https://itanywhere-sng2.ra.ubs.com/vpn/itanywhere.html"
+F6:: Run, chrome.exe "ubs.com/remoteaccess"
 
 ;Mail
 F7:: Run, "shell:AppsFolder\microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail"
 
 ;unity Hub
-#u:: Run, "D:\Programs\UnityHub\Unity Hub\Unity Hub.exe"
+;#u:: Run, "D:\Programs\UnityHub\Unity Hub\Unity Hub.exe"
 
 ;vsCode
 #v:: Run, "C:\Users\Shubham\AppData\Local\Programs\Microsoft VS Code\code.exe"
@@ -52,13 +52,13 @@ F7:: Run, "shell:AppsFolder\microsoft.windowscommunicationsapps_8wekyb3d8bbwe!mi
 #q:: Run, "D:\Programs\qBittorrent\qbittorrent.exe"
 
 ;steam
-#s:: Run, "E:\Steam\Steam.exe"
+;#s:: Run, "E:\Steam\Steam.exe"
 
 ;terminal
-#c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
+;#c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
 
 ;Your Phone
-#p:: Run, "shell:AppsFolder\Microsoft.YourPhone_8wekyb3d8bbwe!App"
+;#p:: Run, "shell:AppsFolder\Microsoft.YourPhone_8wekyb3d8bbwe!App"
 
 ;urls
 
