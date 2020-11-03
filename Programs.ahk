@@ -37,7 +37,7 @@ F5::
         Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
 return
 
-F6:: Run, chrome.exe "ubs.com/remoteaccess"
+F6:: Run, chrome.exe "https://workspace-sng2.ra.ubs.com/logon/LogonPoint/workspaceportal.html"
 
 ;Mail
 F7:: Run, "shell:AppsFolder\microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail"
@@ -52,7 +52,7 @@ F7:: Run, "shell:AppsFolder\microsoft.windowscommunicationsapps_8wekyb3d8bbwe!mi
 #q:: Run, "D:\Programs\qBittorrent\qbittorrent.exe"
 
 ;steam
-;#s:: Run, "E:\Steam\Steam.exe"
+#s:: Run, "E:\Steam\Steam.exe"
 
 ;terminal
 ;#c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
