@@ -235,15 +235,15 @@ SendMode Input ; Recommended for new scripts due to its superior speed and relia
         Send, ^s
 return
 
-;audio IO device controls
+;audio output device shortcuts
 NumpadSub:: 
     Run nircmd setdefaultsounddevice "Bullets"
-    audioControlsBox("Output Device: Bullets")
+    notificationBox("Output Device: Bullets")
 return
 
 NumpadAdd::
     Run nircmd setdefaultsounddevice "Jabra"
-    audioControlsBox("Output Device: Jabra")
+    notificationBox("Output Device: Jabra")
 return
 
 ;volume controls
@@ -268,10 +268,10 @@ return
     Send {Media_Next}
 return
 
-; Display sound toggle GUI
-audioControlsBox(message)
+;a notification box, pass the string as an argument
+notificationBox(message)
 {
-    IfWinExist, audioControlsWin
+    IfWinExist, notificationWin
     {
         Gui, destroy
     }
@@ -282,11 +282,11 @@ audioControlsBox(message)
     SysGet, screeny, 1
     xpos:=screenx-275
     ypos:=screeny-100
-    Gui, Show, NoActivate x%xpos% y%ypos% h30 w200, audioControlsWin
+    Gui, Show, NoActivate x%xpos% y%ypos% h30 w200, notificationWin
 
-    SetTimer,audioControlsClose, 1000
+    SetTimer,notificationClose, 1000
 }
-audioControlsClose:
-    SetTimer,audioControlsClose, off
+notificationClose:
+    SetTimer,notificationClose, off
     Gui, destroy
 Return
