@@ -227,12 +227,23 @@ SendMode Input ; Recommended for new scripts due to its superior speed and relia
     {
         Send, ^s
         SplashTextOn,,,Updated script,
-        Sleep,750
+        Sleep,1000
         SplashTextOff
         Reload
     }
     else
         Send, ^s
+return
+
+;audio IO device controls
+NumpadSub:: 
+    Run nircmd setdefaultsounddevice "Bullets"
+    audioControlsBox("Output Device: Bullets")
+return
+
+NumpadAdd::
+    Run nircmd setdefaultsounddevice "Jabra"
+    audioControlsBox("Output Device: Jabra")
 return
 
 ;volume controls
@@ -256,3 +267,26 @@ return
 +F10::
     Send {Media_Next}
 return
+
+; Display sound toggle GUI
+audioControlsBox(message)
+{
+    IfWinExist, audioControlsWin
+    {
+        Gui, destroy
+    }
+
+    Gui, +ToolWindow -Caption +0x400000 +alwaysontop
+    Gui, Add, text, x35 y8, %message%
+    SysGet, screenx, 0
+    SysGet, screeny, 1
+    xpos:=screenx-275
+    ypos:=screeny-100
+    Gui, Show, NoActivate x%xpos% y%ypos% h30 w200, audioControlsWin
+
+    SetTimer,audioControlsClose, 1000
+}
+audioControlsClose:
+    SetTimer,audioControlsClose, off
+    Gui, destroy
+Return

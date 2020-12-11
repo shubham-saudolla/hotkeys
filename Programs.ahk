@@ -3,11 +3,7 @@
 SendMode Input ;recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir% ;ensures a consistent starting directory.
 #SingleInstance force
-
 #NoTrayIcon
-;changing the tray icon
-;Menu, Tray, Icon, %A_ScriptDir%/programsIcon.ico
-;return
 
 ;updates and reloads scripts on Ctrl+S
 ~^s::
@@ -16,7 +12,7 @@ SetWorkingDir %A_ScriptDir% ;ensures a consistent starting directory.
     {
         Send, ^s
         SplashTextOn,,,Updated script!,
-        Sleep,750
+        Sleep,1000
         SplashTextOff
         Reload
     }
@@ -25,7 +21,7 @@ SetWorkingDir %A_ScriptDir% ;ensures a consistent starting directory.
 return
 
 ;programs
-    
+
 ;firefox
 F5::
     IfWinExist, ahk_class MozillaWindowClass
@@ -55,7 +51,7 @@ F7:: Run, "shell:AppsFolder\microsoft.windowscommunicationsapps_8wekyb3d8bbwe!mi
 #s:: Run, "E:\Steam\Steam.exe"
 
 ;terminal
-;#c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
+#c:: Run, "C:\Users\Shubham\AppData\Local\hyper\Hyper.exe"
 
 ;Your Phone
 ;#p:: Run, "shell:AppsFolder\Microsoft.YourPhone_8wekyb3d8bbwe!App"
