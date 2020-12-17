@@ -66,3 +66,22 @@ F7:: Run, "shell:AppsFolder\microsoft.windowscommunicationsapps_8wekyb3d8bbwe!mi
 
 ;whatsApp web
 #w:: Run, "https://web.whatsapp.com"
+
+;iTunes
+NumpadEnter::
+    If ProcessExist("iTunes.exe") && ProcessExist("Last.fm Desktop Scrobbler.exe")
+    {
+        Run, nircmd closeprocess iTunes.exe
+        Run, nircmd closeprocess "C:\Program Files (x86)\Last.fm\Last.fm Desktop Scrobbler\Last.fm Desktop Scrobbler.exe"
+    }
+    Else
+    {
+        Run, "C:\Program Files\iTunes\iTunes.exe"
+        Run, "C:\Program Files (x86)\Last.fm\Last.fm Desktop Scrobbler\Last.fm Desktop Scrobbler.exe"
+    }
+
+    ProcessExist(Name){
+        Process,Exist,%Name%
+        return Errorlevel
+    }
+Return
