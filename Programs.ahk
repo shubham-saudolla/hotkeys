@@ -33,7 +33,14 @@ F5::
         Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
 return
 
-F6:: Run, chrome.exe "https://workspace-sng2.ra.ubs.com/logon/LogonPoint/workspaceportal.html"
+;workspace login
+F6::
+    run cmd.exe
+    WinWait, ahk_exe cmd.exe
+    Send e:{enter}
+    Send cd E:\Projects\ubs-login\{enter}
+    Send python login.py{enter}
+return
 
 ;Mail
 F7:: Run, "shell:AppsFolder\microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail"
@@ -66,6 +73,8 @@ F7:: Run, "shell:AppsFolder\microsoft.windowscommunicationsapps_8wekyb3d8bbwe!mi
 
 ;whatsApp web
 #w:: Run, "https://web.whatsapp.com"
+
+
 
 ; iTunes
 ; NumpadEnter::
