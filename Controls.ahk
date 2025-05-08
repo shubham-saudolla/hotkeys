@@ -236,15 +236,15 @@ SendMode Input ; Recommended for new scripts due to its superior speed and relia
 return
 
 ;audio output device shortcuts
-NumpadSub:: 
-    Run nircmd setdefaultsounddevice "Bullets"
-    notificationBox("Output Device: Bullets")
-return
+; NumpadSub:: 
+;     Run nircmd setdefaultsounddevice "Bullets"
+;     notificationBox("Output Device: Bullets")
+; return
 
-NumpadAdd::
-    Run nircmd setdefaultsounddevice "Jabra"
-    notificationBox("Output Device: Jabra")
-return
+; NumpadAdd::
+;     Run nircmd setdefaultsounddevice "Jabra"
+;     notificationBox("Output Device: Jabra")
+; return
 
 ;volume controls
 F9::
